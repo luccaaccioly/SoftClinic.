@@ -1,0 +1,213 @@
+body{background-color: beige;}
+
+/*header*/
+header{
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100%; 
+}
+.bg-light{background-color: rgb(214, 213, 213) !important;}
+.espaco_header{
+    background-color: rgb(214, 213, 213) !important;
+    padding: 10px;
+    width: 100%;
+}
+.btn{
+    background-color: rgb(16, 17, 119);
+    border-color: rgb(16, 17, 119);
+}
+
+.logo{
+    max-block-size: 100px;
+}
+.navbar{padding-top: 2%;}
+/*header*/
+
+
+/*poster*/
+.poster{
+    background-image: url(https://picsum.photos/id/870/200/300?grayscale&blur=2);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    color: rgb(248, 248, 248);
+    height: 600px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.poster > h1{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*poster*/
+
+
+
+
+/*sobre*/
+.sobre{
+    background-color: rgb(236, 234, 234);
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.imagem_sobre > img{
+    height: 300px;
+    width: 350px;
+    border-radius: 50%;
+    max-width: none;
+}
+
+.imagem_sobre{text-align: center !important;}
+
+.col-6{flex: none;}
+/*sobre*/
+
+
+
+
+
+/*equipe*/
+.equipe{
+    background-color: rgb(236, 234, 234);
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.imagem_equipe > img{
+    height: 300px;
+    width: 350px;
+    border-radius: 50%;
+    max-width: none;
+}
+
+.imagem_equipe{text-align: center !important;}
+/*equipe*/
+
+
+
+/*footer*/
+footer{
+    background-color: gainsboro;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 3%;
+    font-size: 10px;
+}
+/*footer*/
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:601px) and (max-width:1199px){/*tablet*/
+    /*header*/
+    header{width: 100%;}
+    .navbar{
+        width: 100%;
+        flex-wrap: unset;
+    }
+    .collapse:not(.show) {
+        display: inline;
+    }
+    .nav-link {
+        display: none;
+    }
+    .btn{
+        margin-top: 20px;
+        margin-left: 70%;
+    }
+    .cabecalho{padding-right: 0px;}
+    /*header*/
+
+    /*poster*/
+    /*poster*/
+    
+    /*sobre*/
+    .imagem_sobre{display: none;}
+    .texto_sobre > h1{text-align: center;}
+    /*sobre*/
+
+    /*equipe*/
+    .imagem_equipe{display: none;}
+    .texto_equipe > h1{text-align: center;}
+    /*equipe*/
+
+    /*footer*/
+    footer.row{
+        width: 103%;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /*footer*/
+}
+
+@media screen and (max-width: 600px){ /*mobile*/
+    /*header*/
+    header{width: 100%;}
+    .navbar{
+        width: 100%;
+        flex-wrap: unset;
+    }
+    .collapse:not(.show) {
+        display: inline;
+    }
+    .nav-link {
+        display: none;
+    }
+    .btn{
+        margin-top: 20px;
+        margin-left: 30%;
+    }
+    .cabecalho{padding-right: 0px;}
+    /*header*/
+
+    /*poster*/
+    .poster{max-height: 500px;}
+    /*poster*/
+    
+    /*sobre*/
+    .imagem_sobre{display: none;}
+    .texto_sobre > h1{text-align: center;}
+    /*sobre*/
+
+    /*equipe*/
+    .imagem_equipe{display: none;}
+    .texto_equipe > h1{text-align: center;}
+    /*equipe*/
+
+    /*footer*/
+    footer.row{
+        width: 103%;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /*footer*/
+
+
+    @media screen and (max-width: 350px){
+        .poster{max-height: 400px;}
+    }
+}
